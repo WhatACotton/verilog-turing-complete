@@ -1,0 +1,637 @@
+$date
+	Wed Apr 17 17:49:04 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ODD_NUMBER_OF_SIGNALS_tb $end
+$scope module DUT $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # in2 $end
+$var wire 1 $ in3 $end
+$var wire 1 % w_out1 $end
+$var wire 1 & w_out0 $end
+$var wire 1 ' out $end
+$scope module XNOR0 $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 & out $end
+$var wire 1 ( n_out $end
+$scope module NOT $end
+$var wire 1 & out $end
+$var wire 1 ( in0 $end
+$scope module NAND $end
+$var wire 1 & out $end
+$var wire 1 ( in1 $end
+$var wire 1 ( in0 $end
+$upscope $end
+$upscope $end
+$scope module XOR $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 ) w_1 $end
+$var wire 1 * w_0 $end
+$var wire 1 ( out $end
+$scope module AND $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 + w_1 $end
+$var wire 1 ) out $end
+$scope module NAND $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 + out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 + in0 $end
+$var wire 1 ) out $end
+$scope module NAND $end
+$var wire 1 + in0 $end
+$var wire 1 + in1 $end
+$var wire 1 ) out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR0 $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 , w_1 $end
+$var wire 1 - w_0 $end
+$var wire 1 * out $end
+$var wire 1 . n_out $end
+$scope module NAND $end
+$var wire 1 . out $end
+$var wire 1 , in1 $end
+$var wire 1 - in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 . in0 $end
+$var wire 1 * out $end
+$scope module NAND $end
+$var wire 1 . in0 $end
+$var wire 1 . in1 $end
+$var wire 1 * out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 ! in0 $end
+$var wire 1 - out $end
+$scope module NAND $end
+$var wire 1 ! in0 $end
+$var wire 1 ! in1 $end
+$var wire 1 - out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 " in0 $end
+$var wire 1 , out $end
+$scope module NAND $end
+$var wire 1 " in0 $end
+$var wire 1 " in1 $end
+$var wire 1 , out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR1 $end
+$var wire 1 * in0 $end
+$var wire 1 ) in1 $end
+$var wire 1 / w_1 $end
+$var wire 1 0 w_0 $end
+$var wire 1 ( out $end
+$var wire 1 1 n_out $end
+$scope module NAND $end
+$var wire 1 1 out $end
+$var wire 1 / in1 $end
+$var wire 1 0 in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 1 in0 $end
+$var wire 1 ( out $end
+$scope module NAND $end
+$var wire 1 1 in0 $end
+$var wire 1 1 in1 $end
+$var wire 1 ( out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 * in0 $end
+$var wire 1 0 out $end
+$scope module NAND $end
+$var wire 1 * in0 $end
+$var wire 1 * in1 $end
+$var wire 1 0 out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 ) in0 $end
+$var wire 1 / out $end
+$scope module NAND $end
+$var wire 1 ) in0 $end
+$var wire 1 ) in1 $end
+$var wire 1 / out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module XNOR1 $end
+$var wire 1 # in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 % out $end
+$var wire 1 2 n_out $end
+$scope module NOT $end
+$var wire 1 % out $end
+$var wire 1 2 in0 $end
+$scope module NAND $end
+$var wire 1 % out $end
+$var wire 1 2 in1 $end
+$var wire 1 2 in0 $end
+$upscope $end
+$upscope $end
+$scope module XOR $end
+$var wire 1 # in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 3 w_1 $end
+$var wire 1 4 w_0 $end
+$var wire 1 2 out $end
+$scope module AND $end
+$var wire 1 # in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 5 w_1 $end
+$var wire 1 3 out $end
+$scope module NAND $end
+$var wire 1 # in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 5 out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 5 in0 $end
+$var wire 1 3 out $end
+$scope module NAND $end
+$var wire 1 5 in0 $end
+$var wire 1 5 in1 $end
+$var wire 1 3 out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR0 $end
+$var wire 1 # in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 6 w_1 $end
+$var wire 1 7 w_0 $end
+$var wire 1 4 out $end
+$var wire 1 8 n_out $end
+$scope module NAND $end
+$var wire 1 8 out $end
+$var wire 1 6 in1 $end
+$var wire 1 7 in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 8 in0 $end
+$var wire 1 4 out $end
+$scope module NAND $end
+$var wire 1 8 in0 $end
+$var wire 1 8 in1 $end
+$var wire 1 4 out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 # in0 $end
+$var wire 1 7 out $end
+$scope module NAND $end
+$var wire 1 # in0 $end
+$var wire 1 # in1 $end
+$var wire 1 7 out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 $ in0 $end
+$var wire 1 6 out $end
+$scope module NAND $end
+$var wire 1 $ in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 6 out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR1 $end
+$var wire 1 4 in0 $end
+$var wire 1 3 in1 $end
+$var wire 1 9 w_1 $end
+$var wire 1 : w_0 $end
+$var wire 1 2 out $end
+$var wire 1 ; n_out $end
+$scope module NAND $end
+$var wire 1 ; out $end
+$var wire 1 9 in1 $end
+$var wire 1 : in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ; in0 $end
+$var wire 1 2 out $end
+$scope module NAND $end
+$var wire 1 ; in0 $end
+$var wire 1 ; in1 $end
+$var wire 1 2 out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 4 in0 $end
+$var wire 1 : out $end
+$scope module NAND $end
+$var wire 1 4 in0 $end
+$var wire 1 4 in1 $end
+$var wire 1 : out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 3 in0 $end
+$var wire 1 9 out $end
+$scope module NAND $end
+$var wire 1 3 in0 $end
+$var wire 1 3 in1 $end
+$var wire 1 9 out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module XOR0 $end
+$var wire 1 & in0 $end
+$var wire 1 % in1 $end
+$var wire 1 < w_1 $end
+$var wire 1 = w_0 $end
+$var wire 1 ' out $end
+$scope module AND $end
+$var wire 1 & in0 $end
+$var wire 1 % in1 $end
+$var wire 1 > w_1 $end
+$var wire 1 < out $end
+$scope module NAND $end
+$var wire 1 & in0 $end
+$var wire 1 % in1 $end
+$var wire 1 > out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 > in0 $end
+$var wire 1 < out $end
+$scope module NAND $end
+$var wire 1 > in0 $end
+$var wire 1 > in1 $end
+$var wire 1 < out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR0 $end
+$var wire 1 & in0 $end
+$var wire 1 % in1 $end
+$var wire 1 ? w_1 $end
+$var wire 1 @ w_0 $end
+$var wire 1 = out $end
+$var wire 1 A n_out $end
+$scope module NAND $end
+$var wire 1 A out $end
+$var wire 1 ? in1 $end
+$var wire 1 @ in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 A in0 $end
+$var wire 1 = out $end
+$scope module NAND $end
+$var wire 1 A in0 $end
+$var wire 1 A in1 $end
+$var wire 1 = out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 & in0 $end
+$var wire 1 @ out $end
+$scope module NAND $end
+$var wire 1 & in0 $end
+$var wire 1 & in1 $end
+$var wire 1 @ out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 % in0 $end
+$var wire 1 ? out $end
+$scope module NAND $end
+$var wire 1 % in0 $end
+$var wire 1 % in1 $end
+$var wire 1 ? out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOR1 $end
+$var wire 1 = in0 $end
+$var wire 1 < in1 $end
+$var wire 1 B w_1 $end
+$var wire 1 C w_0 $end
+$var wire 1 ' out $end
+$var wire 1 D n_out $end
+$scope module NAND $end
+$var wire 1 D out $end
+$var wire 1 B in1 $end
+$var wire 1 C in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 D in0 $end
+$var wire 1 ' out $end
+$scope module NAND $end
+$var wire 1 D in0 $end
+$var wire 1 D in1 $end
+$var wire 1 ' out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 = in0 $end
+$var wire 1 C out $end
+$scope module NAND $end
+$var wire 1 = in0 $end
+$var wire 1 = in1 $end
+$var wire 1 C out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 < in0 $end
+$var wire 1 B out $end
+$scope module NAND $end
+$var wire 1 < in0 $end
+$var wire 1 < in1 $end
+$var wire 1 B out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1D
+1C
+0B
+1A
+0@
+0?
+0>
+0=
+1<
+1;
+0:
+19
+08
+17
+16
+15
+14
+03
+02
+11
+00
+1/
+0.
+1-
+1,
+1+
+1*
+0)
+0(
+0'
+1&
+1%
+0$
+0#
+0"
+0!
+$end
+#2
+1'
+0D
+1B
+0<
+1>
+1@
+0&
+1(
+01
+10
+0*
+1.
+0-
+1!
+#4
+0,
+1-
+1"
+0!
+#6
+0'
+1D
+0B
+1<
+0>
+0@
+1&
+0(
+11
+0/
+1)
+0+
+0-
+1!
+#8
+1'
+0D
+1B
+1?
+0<
+0%
+1>
+0@
+12
+1&
+0;
+0(
+1:
+11
+00
+04
+1/
+1*
+18
+0)
+0.
+07
+1,
+1+
+1-
+1#
+0"
+0!
+#10
+0'
+1D
+0C
+1=
+0A
+1@
+0&
+1(
+01
+10
+0*
+1.
+0-
+1!
+#12
+0,
+1-
+1"
+0!
+#14
+1'
+0D
+1C
+0=
+1A
+0@
+1&
+0(
+11
+0/
+1)
+0+
+0-
+1!
+#16
+1'
+0D
+1C
+0=
+1A
+0@
+1&
+0(
+11
+00
+1/
+1*
+0)
+0.
+06
+17
+1,
+1+
+1-
+1$
+0#
+0"
+0!
+#18
+0'
+1D
+0C
+1=
+0A
+1@
+0&
+1(
+01
+10
+0*
+1.
+0-
+1!
+#20
+0,
+1-
+1"
+0!
+#22
+1'
+0D
+1C
+0=
+1A
+0@
+1&
+0(
+11
+0/
+1)
+0+
+0-
+1!
+#24
+0'
+1D
+0B
+1<
+0>
+0?
+0@
+1%
+1&
+02
+0(
+1;
+11
+00
+09
+1/
+1*
+13
+0)
+0.
+05
+07
+1,
+1+
+1-
+1#
+0"
+0!
+#26
+1'
+0D
+1B
+0<
+1>
+1@
+0&
+1(
+01
+10
+0*
+1.
+0-
+1!
+#28
+0,
+1-
+1"
+0!
+#30
+0'
+1D
+0B
+1<
+0>
+0@
+1&
+0(
+11
+0/
+1)
+0+
+0-
+1!
+#32
