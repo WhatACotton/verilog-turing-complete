@@ -4,7 +4,7 @@ module AND_GATE(
      output wire       out
 );
     wire w_1;
-    NAND_GATE AND(
+    NAND_GATE NAND(
         .in0    (in0    ),
         .in1    (in1    ),
         .out    (w_1    )
