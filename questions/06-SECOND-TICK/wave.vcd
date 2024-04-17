@@ -1,0 +1,71 @@
+$date
+	Wed Apr 17 16:28:29 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module SECOND_TICK_tb $end
+$scope module SECOND_TICK $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # w_0 $end
+$var wire 1 $ out $end
+$scope module AND $end
+$var wire 1 ! in1 $end
+$var wire 1 % w_1 $end
+$var wire 1 $ out $end
+$var wire 1 # in0 $end
+$scope module AND $end
+$var wire 1 ! in1 $end
+$var wire 1 % out $end
+$var wire 1 # in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 % in0 $end
+$var wire 1 $ out $end
+$scope module NAND $end
+$var wire 1 % in0 $end
+$var wire 1 % in1 $end
+$var wire 1 $ out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 " in0 $end
+$var wire 1 # out $end
+$scope module NAND $end
+$var wire 1 " in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1%
+0$
+1#
+0"
+0!
+$end
+#2
+1$
+0%
+1!
+#4
+0$
+0#
+1%
+1"
+0!
+#6
+1!
+#8
