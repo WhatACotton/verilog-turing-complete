@@ -1,5 +1,5 @@
 $date
-	Wed Apr 17 15:34:37 2024
+	Wed Apr 17 16:08:06 2024
 $end
 $version
 	Icarus Verilog
@@ -7,25 +7,45 @@ $end
 $timescale
 	1s
 $end
-$scope module NAND_GATE_tb $end
-$scope module DUT $end
+$scope module NOR_GATE_tb $end
+$scope module NOR $end
 $var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # w_1 $end
+$var wire 1 $ w_0 $end
+$var wire 1 % out $end
+$var wire 1 & n_out $end
+$scope module NAND $end
+$var wire 1 & out $end
+$var wire 1 # in1 $end
+$var wire 1 $ in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 & in0 $end
+$var wire 1 % out $end
+$scope module NAND $end
+$var wire 1 & in0 $end
+$var wire 1 & in1 $end
+$var wire 1 % out $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 ! in0 $end
+$var wire 1 $ out $end
+$scope module NAND $end
+$var wire 1 ! in0 $end
+$var wire 1 ! in1 $end
+$var wire 1 $ out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 " in0 $end
+$var wire 1 # out $end
+$scope module NAND $end
+$var wire 1 " in0 $end
 $var wire 1 " in1 $end
 $var wire 1 # out $end
 $upscope $end
-$upscope $end
-$scope module NOR_GATE_tb $end
-$scope module NOR $end
-$var wire 1 $ in0 $end
-$var wire 1 % in1 $end
-$var wire 1 & n_in0 $end
-$var wire 1 ' n_in1 $end
-$var wire 1 ( out $end
-$var wire 1 ) n_out $end
-$scope module NAND $end
-$var wire 1 & in0 $end
-$var wire 1 ' in1 $end
-$var wire 1 ) out $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -35,32 +55,24 @@ $dumpall
 $end
 #0
 $dumpvars
-0)
-1(
-1'
-1&
-0%
-0$
+0&
+1%
+1$
 1#
 0"
 0!
 $end
 #2
-0(
-1)
-0&
-1$
+0%
+1&
+0$
 1!
 #4
-0'
-1&
-1%
-0$
+0#
+1$
 1"
 0!
 #6
-0#
-0&
-1$
+0$
 1!
 #8
