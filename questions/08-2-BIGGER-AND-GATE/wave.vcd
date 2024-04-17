@@ -1,0 +1,124 @@
+$date
+	Wed Apr 17 16:52:02 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module BIGGER_AND_GATE_tb $end
+$scope module DUT $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # in2 $end
+$var wire 1 $ w_1 $end
+$var wire 1 % w_0 $end
+$var wire 1 & out $end
+$scope module AND0 $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 ' w_1 $end
+$var wire 1 % out $end
+$scope module AND $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 ' out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ' in0 $end
+$var wire 1 % out $end
+$scope module NAND $end
+$var wire 1 ' in0 $end
+$var wire 1 ' in1 $end
+$var wire 1 % out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module AND1 $end
+$var wire 1 " in0 $end
+$var wire 1 # in1 $end
+$var wire 1 ( w_1 $end
+$var wire 1 $ out $end
+$scope module AND $end
+$var wire 1 " in0 $end
+$var wire 1 # in1 $end
+$var wire 1 ( out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ( in0 $end
+$var wire 1 $ out $end
+$scope module NAND $end
+$var wire 1 ( in0 $end
+$var wire 1 ( in1 $end
+$var wire 1 $ out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module AND2 $end
+$var wire 1 % in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 ) w_1 $end
+$var wire 1 & out $end
+$scope module AND $end
+$var wire 1 % in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 ) out $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ) in0 $end
+$var wire 1 & out $end
+$scope module NAND $end
+$var wire 1 ) in0 $end
+$var wire 1 ) in1 $end
+$var wire 1 & out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1)
+1(
+1'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#2
+1!
+#4
+1"
+0!
+#6
+1%
+0'
+1!
+#8
+0%
+1'
+1#
+0"
+0!
+#10
+1!
+#12
+1$
+0(
+1"
+0!
+#14
+1&
+0)
+1%
+0'
+1!
+#16

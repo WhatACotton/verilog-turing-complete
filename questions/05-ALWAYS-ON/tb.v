@@ -1,5 +1,4 @@
-
-module ALWAYS_ON_GATE_tb;
+module SECOND_TICK_tb;
 
     reg in0 = 1'b0;
     initial begin
