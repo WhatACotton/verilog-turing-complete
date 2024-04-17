@@ -14,7 +14,7 @@ module NOT_GATE_tb;
 
     reg in0 = 1'b0;
     initial begin
-        $dumpfile("not_gate.vcd");
+        $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
     end
     

@@ -1,5 +1,5 @@
 $date
-	Wed Apr 17 14:44:19 2024
+	Wed Apr 17 15:32:16 2024
 $end
 $version
 	Icarus Verilog
@@ -7,10 +7,11 @@ $end
 $timescale
 	1s
 $end
-$scope module CRUDE_AWAKENING_tb $end
+$scope module NAND_GATE_tb $end
 $scope module DUT $end
 $var wire 1 ! in0 $end
-$var wire 1 " out $end
+$var wire 1 " in1 $end
+$var wire 1 # out $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -19,10 +20,16 @@ $dumpall
 $end
 #0
 $dumpvars
+1#
 0"
 0!
 $end
 #2
-1"
 1!
 #4
+1"
+0!
+#6
+0#
+1!
+#8

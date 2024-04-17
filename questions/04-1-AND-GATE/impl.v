@@ -18,7 +18,7 @@ module AND_GATE_tb;
     reg in1 = 1'b0;
 
     initial begin
-        $dumpfile("and_gate.vcd");
+        $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
     end
     

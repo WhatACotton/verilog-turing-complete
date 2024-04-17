@@ -10,7 +10,7 @@ module CRUDE_AWAKENING_tb;
     reg in0 = 1'b0;
 
     initial begin
-        $dumpfile("crude_awakening.vcd");
+        $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
     end
 
