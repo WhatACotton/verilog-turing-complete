@@ -1,0 +1,28 @@
+$date
+	Wed Apr 17 14:44:19 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module CRUDE_AWAKENING_tb $end
+$scope module DUT $end
+$var wire 1 ! in0 $end
+$var wire 1 " out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0"
+0!
+$end
+#2
+1"
+1!
+#4
