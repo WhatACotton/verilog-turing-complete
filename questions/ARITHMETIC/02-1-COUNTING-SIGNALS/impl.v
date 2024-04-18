@@ -1,11 +1,14 @@
 module  COUNTING_SIGNALS(
-     input wire       in0,
-     input wire       in1,
-     input wire       in2,
-     input wire       in3,
-     output wire      [2:0] out 
+     input wire     switch,
+     input wire      [0:0]   in0,
+     input wire      [0:0]  in1,
+     input wire      [0:0] in2,
+     input wire      [0:0] in3,
+    output wire      [2:0] out
 );
-   
+    wire o0;
+    wire o1;
+    wire o2;
     wire is2;
     wire is4;
     wire is0;
@@ -93,7 +96,10 @@ module  COUNTING_SIGNALS(
         .in0    (isOdd    ),
         .out    (out[0]    )
     );
-   
+   always @(posedge switch) begin 
+      
+         $display("out = %h", out);
+    end
 
 endmodule
 

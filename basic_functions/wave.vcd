@@ -1,0 +1,34 @@
+$date
+	Thu Apr 18 15:54:22 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Basic_count_tb $end
+$var wire 16 ! out [15:0] $end
+$var reg 1 " r_a $end
+$scope module count $end
+$var wire 1 " in0 $end
+$var reg 16 # out [15:0] $end
+$var reg 16 $ r [15:0] $end
+$var reg 2 % r2 [1:0] $end
+$var reg 16 & r3 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1001 &
+b1 %
+b1000 $
+b1001 #
+1"
+b1001 !
+$end
+#2
