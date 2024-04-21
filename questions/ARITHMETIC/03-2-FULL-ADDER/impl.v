@@ -2,7 +2,8 @@ module FULL_ADDER(
      input wire       in0,
      input wire       in1,
      input wire       in2,
-     output wire [1:0]      out
+     output wire     out,
+     output wire cout
 );
     wire w_0;
     wire w_1;
@@ -15,7 +16,7 @@ module FULL_ADDER(
     XOR_GATE XOR1(
         .in0    (w_0    ),
         .in1    (in2    ),
-        .out    (out[0]    )
+        .out    (out    )
     );
     AND_GATE AND0(
         .in0    (in0    ),
@@ -30,7 +31,7 @@ module FULL_ADDER(
     OR_GATE OR0(
         .in0    (w_1    ),
         .in1    (w_2    ),
-        .out    (out[1]    )
+        .out    (cout    )
     );
     
 endmodule

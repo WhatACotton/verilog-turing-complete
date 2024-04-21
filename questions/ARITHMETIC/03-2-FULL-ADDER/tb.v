@@ -12,7 +12,8 @@ module FULL_ADDER_tb;
         .in0    (in0    ),
         .in1    (in1    ),
         .in2    (in2    ),
-        .out    (out    )
+        .out    (out    ),
+        .cout   (cout   )
     );
 
     initial begin

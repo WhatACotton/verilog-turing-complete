@@ -1,5 +1,5 @@
 $date
-	Fri Apr 19 00:37:03 2024
+	Sun Apr 21 07:14:17 2024
 $end
 $version
 	Icarus Verilog
@@ -15,43 +15,44 @@ $var wire 1 # in2 $end
 $var wire 1 $ w_2 $end
 $var wire 1 % w_1 $end
 $var wire 1 & w_0 $end
-$var wire 2 ' out [1:0] $end
+$var wire 1 ' out $end
+$var wire 1 ( cout $end
 $scope module AND0 $end
 $var wire 1 ! in0 $end
 $var wire 1 " in1 $end
-$var wire 1 ( w_1 $end
+$var wire 1 ) w_1 $end
 $var wire 1 % out $end
 $scope module NAND $end
 $var wire 1 ! in0 $end
 $var wire 1 " in1 $end
-$var wire 1 ( out $end
+$var wire 1 ) out $end
 $upscope $end
 $scope module NOT $end
-$var wire 1 ( in0 $end
+$var wire 1 ) in0 $end
 $var wire 1 % out $end
 $scope module NAND $end
-$var wire 1 ( in0 $end
-$var wire 1 ( in1 $end
+$var wire 1 ) in0 $end
+$var wire 1 ) in1 $end
 $var wire 1 % out $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module AND1 $end
 $var wire 1 # in1 $end
-$var wire 1 ) w_1 $end
+$var wire 1 * w_1 $end
 $var wire 1 $ out $end
 $var wire 1 & in0 $end
 $scope module NAND $end
 $var wire 1 # in1 $end
-$var wire 1 ) out $end
+$var wire 1 * out $end
 $var wire 1 & in0 $end
 $upscope $end
 $scope module NOT $end
-$var wire 1 ) in0 $end
+$var wire 1 * in0 $end
 $var wire 1 $ out $end
 $scope module NAND $end
-$var wire 1 ) in0 $end
-$var wire 1 ) in1 $end
+$var wire 1 * in0 $end
+$var wire 1 * in1 $end
 $var wire 1 $ out $end
 $upscope $end
 $upscope $end
@@ -59,30 +60,30 @@ $upscope $end
 $scope module OR0 $end
 $var wire 1 % in0 $end
 $var wire 1 $ in1 $end
-$var wire 1 * w_1 $end
-$var wire 1 + w_0 $end
-$var wire 1 , out $end
+$var wire 1 + w_1 $end
+$var wire 1 , w_0 $end
+$var wire 1 ( out $end
 $scope module NAND $end
-$var wire 1 , out $end
-$var wire 1 * in1 $end
-$var wire 1 + in0 $end
+$var wire 1 ( out $end
+$var wire 1 + in1 $end
+$var wire 1 , in0 $end
 $upscope $end
 $scope module NOT0 $end
 $var wire 1 % in0 $end
-$var wire 1 + out $end
+$var wire 1 , out $end
 $scope module NAND $end
 $var wire 1 % in0 $end
 $var wire 1 % in1 $end
-$var wire 1 + out $end
+$var wire 1 , out $end
 $upscope $end
 $upscope $end
 $scope module NOT1 $end
 $var wire 1 $ in0 $end
-$var wire 1 * out $end
+$var wire 1 + out $end
 $scope module NAND $end
 $var wire 1 $ in0 $end
 $var wire 1 $ in1 $end
-$var wire 1 * out $end
+$var wire 1 + out $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -198,23 +199,23 @@ $var wire 1 & in0 $end
 $var wire 1 # in1 $end
 $var wire 1 6 w_1 $end
 $var wire 1 7 w_0 $end
-$var wire 1 8 out $end
+$var wire 1 ' out $end
 $scope module AND $end
 $var wire 1 & in0 $end
 $var wire 1 # in1 $end
-$var wire 1 9 w_1 $end
+$var wire 1 8 w_1 $end
 $var wire 1 6 out $end
 $scope module NAND $end
 $var wire 1 & in0 $end
 $var wire 1 # in1 $end
-$var wire 1 9 out $end
+$var wire 1 8 out $end
 $upscope $end
 $scope module NOT $end
-$var wire 1 9 in0 $end
+$var wire 1 8 in0 $end
 $var wire 1 6 out $end
 $scope module NAND $end
-$var wire 1 9 in0 $end
-$var wire 1 9 in1 $end
+$var wire 1 8 in0 $end
+$var wire 1 8 in1 $end
 $var wire 1 6 out $end
 $upscope $end
 $upscope $end
@@ -222,80 +223,80 @@ $upscope $end
 $scope module NOR0 $end
 $var wire 1 & in0 $end
 $var wire 1 # in1 $end
-$var wire 1 : w_1 $end
-$var wire 1 ; w_0 $end
+$var wire 1 9 w_1 $end
+$var wire 1 : w_0 $end
 $var wire 1 7 out $end
-$var wire 1 < n_out $end
+$var wire 1 ; n_out $end
 $scope module NAND $end
-$var wire 1 < out $end
-$var wire 1 : in1 $end
-$var wire 1 ; in0 $end
+$var wire 1 ; out $end
+$var wire 1 9 in1 $end
+$var wire 1 : in0 $end
 $upscope $end
 $scope module NOT $end
-$var wire 1 < in0 $end
+$var wire 1 ; in0 $end
 $var wire 1 7 out $end
 $scope module NAND $end
-$var wire 1 < in0 $end
-$var wire 1 < in1 $end
+$var wire 1 ; in0 $end
+$var wire 1 ; in1 $end
 $var wire 1 7 out $end
 $upscope $end
 $upscope $end
 $scope module NOT0 $end
 $var wire 1 & in0 $end
-$var wire 1 ; out $end
+$var wire 1 : out $end
 $scope module NAND $end
 $var wire 1 & in0 $end
 $var wire 1 & in1 $end
-$var wire 1 ; out $end
+$var wire 1 : out $end
 $upscope $end
 $upscope $end
 $scope module NOT1 $end
 $var wire 1 # in0 $end
-$var wire 1 : out $end
+$var wire 1 9 out $end
 $scope module NAND $end
 $var wire 1 # in0 $end
 $var wire 1 # in1 $end
-$var wire 1 : out $end
+$var wire 1 9 out $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module NOR1 $end
 $var wire 1 7 in0 $end
 $var wire 1 6 in1 $end
-$var wire 1 = w_1 $end
-$var wire 1 > w_0 $end
-$var wire 1 8 out $end
-$var wire 1 ? n_out $end
+$var wire 1 < w_1 $end
+$var wire 1 = w_0 $end
+$var wire 1 ' out $end
+$var wire 1 > n_out $end
 $scope module NAND $end
-$var wire 1 ? out $end
-$var wire 1 = in1 $end
-$var wire 1 > in0 $end
+$var wire 1 > out $end
+$var wire 1 < in1 $end
+$var wire 1 = in0 $end
 $upscope $end
 $scope module NOT $end
-$var wire 1 ? in0 $end
-$var wire 1 8 out $end
+$var wire 1 > in0 $end
+$var wire 1 ' out $end
 $scope module NAND $end
-$var wire 1 ? in0 $end
-$var wire 1 ? in1 $end
-$var wire 1 8 out $end
+$var wire 1 > in0 $end
+$var wire 1 > in1 $end
+$var wire 1 ' out $end
 $upscope $end
 $upscope $end
 $scope module NOT0 $end
 $var wire 1 7 in0 $end
-$var wire 1 > out $end
+$var wire 1 = out $end
 $scope module NAND $end
 $var wire 1 7 in0 $end
 $var wire 1 7 in1 $end
-$var wire 1 > out $end
+$var wire 1 = out $end
 $upscope $end
 $upscope $end
 $scope module NOT1 $end
 $var wire 1 6 in0 $end
-$var wire 1 = out $end
+$var wire 1 < out $end
 $scope module NAND $end
 $var wire 1 6 in0 $end
 $var wire 1 6 in1 $end
-$var wire 1 = out $end
+$var wire 1 < out $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -308,14 +309,13 @@ $dumpall
 $end
 #0
 $dumpvars
-1?
-0>
-1=
-0<
-1;
+1>
+0=
+1<
+0;
 1:
 19
-08
+18
 17
 06
 15
@@ -327,12 +327,12 @@ $dumpvars
 1/
 1.
 0-
-0,
+1,
 1+
 1*
 1)
-1(
-b0 '
+0(
+0'
 0&
 0%
 0$
@@ -341,13 +341,12 @@ b0 '
 0!
 $end
 #2
-b1 '
-18
-0?
-1>
+1'
+0>
+1=
 07
-1<
-0;
+1;
+0:
 1&
 05
 14
@@ -361,68 +360,65 @@ b1 '
 1"
 0!
 #6
-08
-1?
-0>
+0'
+1>
+0=
 17
-0<
-1;
+0;
+1:
 0&
-b10 '
-1,
+1(
 15
-0+
+0,
 03
 1%
 1-
-0(
+0)
 0/
 01
 1!
 #8
-1=
-1*
+1<
+1+
 06
 0$
+1'
 18
-19
-1;
-1)
-0?
+1:
+1*
+0>
 0&
-1>
-b1 '
-0,
+1=
+0(
 15
 04
 07
-1+
+1,
 13
 1.
-1<
+1;
 0%
 0-
 02
-0:
+09
 10
-1(
+1)
 1/
 11
 1#
 0"
 0!
 #10
-08
-1?
-b10 '
-1,
-0=
-0*
+0'
+1>
+1(
+0<
+0+
 16
 1$
-09
-0;
-0)
+08
+0:
+0*
 1&
 05
 14
@@ -436,23 +432,22 @@ b10 '
 1"
 0!
 #14
-b11 '
-18
-0?
-1=
-1*
+1'
+0>
+1<
+1+
 06
 0$
-19
-1;
-1)
+18
+1:
+1*
 0&
 15
-0+
+0,
 03
 1%
 1-
-0(
+0)
 0/
 01
 1!
