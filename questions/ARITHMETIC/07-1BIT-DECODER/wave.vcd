@@ -1,0 +1,40 @@
+$date
+	Sun Apr 21 17:04:08 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ONE_BIT_DECODER_tb $end
+$scope module DUT $end
+$var wire 1 ! in0 $end
+$var wire 1 " out1 $end
+$var wire 1 # out0 $end
+$scope module NOT $end
+$var wire 1 ! in0 $end
+$var wire 1 # out $end
+$scope module NAND $end
+$var wire 1 ! in0 $end
+$var wire 1 ! in1 $end
+$var wire 1 # out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1#
+0"
+0!
+$end
+#2
+0#
+1"
+1!
+#4
