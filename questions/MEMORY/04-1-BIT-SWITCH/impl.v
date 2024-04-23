@@ -13,13 +13,13 @@ module BIT_INVERTER(
         .out    (w_1    )
     );
 
-    AND_GATE AND0(
+    SWITCH_GATE SWC0(
         .in0    (w_0    ),
         .in1    (in1    ),
         .out    (w_2    )
     );
 
-    AND_GATE AND1(
+    SWITCH_GATE SWC1(
         .in0    (w_1    ),
         .in1    (in0    ),
         .out    (w_3    )
@@ -29,5 +29,4 @@ module BIT_INVERTER(
         .in1    (w_3    ),
         .out    (out    )
     );
-    
 endmodule
