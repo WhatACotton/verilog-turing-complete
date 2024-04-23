@@ -1,0 +1,153 @@
+$date
+	Tue Apr 23 20:19:45 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module BIT_INVERTER_tb $end
+$scope module DUT $end
+$var wire 1 ! in0 $end
+$var wire 1 " in1 $end
+$var wire 1 # w_3 $end
+$var wire 1 $ w_2 $end
+$var wire 1 % w_1 $end
+$var wire 1 & w_0 $end
+$var wire 1 ' out $end
+$scope module AND0 $end
+$var wire 1 " in1 $end
+$var wire 1 ( w_1 $end
+$var wire 1 $ out $end
+$var wire 1 & in0 $end
+$scope module NAND $end
+$var wire 1 " in1 $end
+$var wire 1 ( out $end
+$var wire 1 & in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ( in0 $end
+$var wire 1 $ out $end
+$scope module NAND $end
+$var wire 1 ( in0 $end
+$var wire 1 ( in1 $end
+$var wire 1 $ out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module AND1 $end
+$var wire 1 ! in1 $end
+$var wire 1 ) w_1 $end
+$var wire 1 # out $end
+$var wire 1 % in0 $end
+$scope module NAND $end
+$var wire 1 ! in1 $end
+$var wire 1 ) out $end
+$var wire 1 % in0 $end
+$upscope $end
+$scope module NOT $end
+$var wire 1 ) in0 $end
+$var wire 1 # out $end
+$scope module NAND $end
+$var wire 1 ) in0 $end
+$var wire 1 ) in1 $end
+$var wire 1 # out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 ! in0 $end
+$var wire 1 & out $end
+$scope module NAND $end
+$var wire 1 ! in0 $end
+$var wire 1 ! in1 $end
+$var wire 1 & out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 " in0 $end
+$var wire 1 % out $end
+$scope module NAND $end
+$var wire 1 " in0 $end
+$var wire 1 " in1 $end
+$var wire 1 % out $end
+$upscope $end
+$upscope $end
+$scope module OR $end
+$var wire 1 $ in0 $end
+$var wire 1 # in1 $end
+$var wire 1 * w_1 $end
+$var wire 1 + w_0 $end
+$var wire 1 ' out $end
+$scope module NAND $end
+$var wire 1 ' out $end
+$var wire 1 * in1 $end
+$var wire 1 + in0 $end
+$upscope $end
+$scope module NOT0 $end
+$var wire 1 $ in0 $end
+$var wire 1 + out $end
+$scope module NAND $end
+$var wire 1 $ in0 $end
+$var wire 1 $ in1 $end
+$var wire 1 + out $end
+$upscope $end
+$upscope $end
+$scope module NOT1 $end
+$var wire 1 # in0 $end
+$var wire 1 * out $end
+$scope module NAND $end
+$var wire 1 # in0 $end
+$var wire 1 # in1 $end
+$var wire 1 * out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1+
+1*
+1)
+1(
+0'
+1&
+1%
+0$
+0#
+0"
+0!
+$end
+#2
+1'
+0*
+1#
+0)
+0&
+1!
+#4
+1'
+0+
+1*
+1$
+0#
+0(
+0%
+1)
+1&
+1"
+0!
+#6
+0'
+1+
+0$
+1(
+0&
+1!
+#8

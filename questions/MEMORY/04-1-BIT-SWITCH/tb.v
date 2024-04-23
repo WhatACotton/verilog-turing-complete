@@ -1,30 +1,32 @@
 
-module DELAY_tb;
+module BIT_INVERTER_tb;
 
     reg in0 = 1'b0;
+    reg in1 = 1'b0;
+
     initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
     end
-    wire out;
-
-  
-   
-    DELAY_LINES DUT(
+    
+    BIT_INVERTER DUT(
         .in0    (in0    ),
+        .in1    (in1    ),
         .out    (out    )
     );
 
     initial begin
         in0 = 1'b0;
+        in1 = 1'b0;
         #2
         in0 = 1'b1;
+        in1 = 1'b0;
         #2
         in0 = 1'b0;
-        #3       
+        in1 = 1'b1;
+        #2
         in0 = 1'b1;
-        #3       
-        in0 = 1'b0;
+        in1 = 1'b1;
         #2
         $finish;
     end

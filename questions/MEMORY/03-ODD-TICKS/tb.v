@@ -1,5 +1,5 @@
 
-module DELAY_tb;
+module ODD_TICKS_tb;
 
     reg in0 = 1'b0;
     initial begin
@@ -10,22 +10,13 @@ module DELAY_tb;
 
   
    
-    DELAY_LINES DUT(
-        .in0    (in0    ),
+    ODD_TICKS DUT(
         .out    (out    )
     );
 
     initial begin
         in0 = 1'b0;
-        #2
-        in0 = 1'b1;
-        #2
-        in0 = 1'b0;
-        #3       
-        in0 = 1'b1;
-        #3       
-        in0 = 1'b0;
-        #2
+        #6
         $finish;
     end
 

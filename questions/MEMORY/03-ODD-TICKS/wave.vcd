@@ -1,0 +1,55 @@
+$date
+	Tue Apr 23 19:49:50 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ODD_TICKS_tb $end
+$scope module DUT $end
+$var wire 1 ! w_0 $end
+$var wire 1 " out $end
+$scope module DELAY_0 $end
+$var wire 1 ! in0 $end
+$var reg 1 " out $end
+$upscope $end
+$scope module NOT_GATE_0 $end
+$var wire 1 " in0 $end
+$var wire 1 ! out $end
+$scope module NAND $end
+$var wire 1 " in0 $end
+$var wire 1 " in1 $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0"
+1!
+$end
+#1
+0!
+1"
+#2
+1!
+0"
+#3
+0!
+1"
+#4
+1!
+0"
+#5
+0!
+1"
+#6
+1!
+0"

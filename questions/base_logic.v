@@ -227,3 +227,25 @@ module XNOR_GATE(
         .out    (out    )
     );
 endmodule
+
+module SWITCH_GATE(
+    input wire in0,
+    input wire in1,
+    output reg out
+);
+
+always @(in0) begin
+    assign out = in1;
+end
+NOT_GATE NOT(
+    .in0    (in0    ),
+    .out    (w_0    )
+);
+NOT_GATE NOT1(
+    .in0    (in1    ),
+    .out    (w_1    )
+);
+always @(w_0) begin
+    assign out = w_1;
+end
+endmodule
