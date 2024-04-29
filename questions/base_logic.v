@@ -229,23 +229,34 @@ module XNOR_GATE(
 endmodule
 
 module SWITCH_GATE(
+    input wire clk,
     input wire in0,
     input wire in1,
     output reg out
 );
 
-always @(in0) begin
+initial @ (posedge clk) begin
+    if (in0 > 1'b0) begin
     assign out = in1;
+    end else begin
+    assign out = 1'b0;
+    end
 end
-NOT_GATE NOT(
-    .in0    (in0    ),
-    .out    (w_0    )
+
+endmodule
+
+module BYTE_SWITCH_GATE(
+    input wire clk,
+    input wire in0,
+    input wire [7:0] in1,
+    output reg [7:0] out
 );
-NOT_GATE NOT1(
-    .in0    (in1    ),
-    .out    (w_1    )
-);
-always @(w_0) begin
-    assign out = w_1;
+always @(posedge clk) begin
+     if(in0>1'b0) begin 
+        assign out = in1;
+    end else begin
+        assign out = 8'b00000000;
+    end
 end
+
 endmodule

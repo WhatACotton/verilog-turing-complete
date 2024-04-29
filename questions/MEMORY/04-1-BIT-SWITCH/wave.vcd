@@ -1,5 +1,5 @@
 $date
-	Tue Apr 23 23:29:23 2024
+	Wed Apr 24 01:05:56 2024
 $end
 $version
 	Icarus Verilog
@@ -15,7 +15,7 @@ $var wire 1 # w_3 $end
 $var wire 1 $ w_2 $end
 $var wire 1 % w_1 $end
 $var wire 1 & w_0 $end
-$var wire 1 ' out $end
+$var reg 1 ' out $end
 $scope module NOT0 $end
 $var wire 1 ! in0 $end
 $var wire 1 & out $end
@@ -34,63 +34,33 @@ $var wire 1 " in1 $end
 $var wire 1 % out $end
 $upscope $end
 $upscope $end
-$scope module OR $end
-$var wire 1 ( w_1 $end
-$var wire 1 ) w_0 $end
-$var wire 1 ' out $end
-$var wire 1 # in1 $end
-$var wire 1 $ in0 $end
-$scope module NAND $end
-$var wire 1 ' out $end
-$var wire 1 ( in1 $end
-$var wire 1 ) in0 $end
-$upscope $end
-$scope module NOT0 $end
-$var wire 1 ) out $end
-$var wire 1 $ in0 $end
-$scope module NAND $end
-$var wire 1 ) out $end
-$var wire 1 $ in1 $end
-$var wire 1 $ in0 $end
-$upscope $end
-$upscope $end
-$scope module NOT1 $end
-$var wire 1 ( out $end
-$var wire 1 # in0 $end
-$scope module NAND $end
-$var wire 1 ( out $end
-$var wire 1 # in1 $end
-$var wire 1 # in0 $end
-$upscope $end
-$upscope $end
-$upscope $end
 $scope module SWC0 $end
 $var wire 1 & in0 $end
 $var wire 1 " in1 $end
-$var wire 1 * w_0 $end
+$var wire 1 ( w_0 $end
 $var reg 1 $ out $end
 $scope module NOT $end
 $var wire 1 & in0 $end
-$var wire 1 * out $end
+$var wire 1 ( out $end
 $scope module NAND $end
 $var wire 1 & in0 $end
 $var wire 1 & in1 $end
-$var wire 1 * out $end
+$var wire 1 ( out $end
 $upscope $end
 $upscope $end
 $upscope $end
 $scope module SWC1 $end
 $var wire 1 % in0 $end
 $var wire 1 ! in1 $end
-$var wire 1 + w_0 $end
+$var wire 1 ) w_0 $end
 $var reg 1 # out $end
 $scope module NOT $end
 $var wire 1 % in0 $end
-$var wire 1 + out $end
+$var wire 1 ) out $end
 $scope module NAND $end
 $var wire 1 % in0 $end
 $var wire 1 % in1 $end
-$var wire 1 + out $end
+$var wire 1 ) out $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -102,10 +72,8 @@ $dumpall
 $end
 #0
 $dumpvars
-0+
-0*
-1)
-1(
+0)
+0(
 0'
 1&
 1%
@@ -115,29 +83,25 @@ $dumpvars
 0!
 $end
 #2
-1*
-1'
+1(
 0&
-0(
+1'
 1#
 1!
 #4
-0)
-1+
-0*
-1'
+1)
+0(
 1$
 0%
 1&
-1(
 1"
+1'
 0#
 0!
 #6
 0'
-1)
 0$
-1*
+1(
 0&
 1!
 #8
