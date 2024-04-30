@@ -1,33 +1,46 @@
 
-module AND_GATE_tb;
+module MEMORY_tb;
 
-    reg in0 = 1'b0;
-    reg in1 = 1'b0;
-
+    reg save = 1'b0;
+    reg value = 1'b0;
+    reg clk = 1'b1;
     initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
     end
-    
-    AND_GATE DUT(
-        .in0    (in0    ),
-        .in1    (in1    ),
+    always #1 begin
+        clk <= ~clk;
+    end
+    MEMORY DUT(
+        .clk (clk),
+        .save    (save    ),
+        .value    (value    ),
         .out    (out    )
     );
 
     initial begin
-        in0 = 1'b0;
-        in1 = 1'b0;
+        save = 1'b1;
+        value = 1'b1;
+        #4
+        value = 1'b0;
+        #4
+        save = 1'b0;
         #2
-        in0 = 1'b1;
-        in1 = 1'b0;
+        save = 1'b0;
         #2
-        in0 = 1'b0;
-        in1 = 1'b1;
+        value = 1'b1;
         #2
-        in0 = 1'b1;
-        in1 = 1'b1;
+        save = 1'b1;
+        value = 1'b0;
         #2
+        value = 1'b1;
+        #4
+        save = 1'b0;
+        #2
+        value = 1'b0;
+        #2
+        save = 1'b1;
+        #4
         $finish;
     end
 

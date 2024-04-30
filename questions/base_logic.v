@@ -235,11 +235,11 @@ module SWITCH_GATE(
     output reg out
 );
 
-initial @ (posedge clk) begin
+always @ (posedge clk) begin
     if (in0 > 1'b0) begin
-    assign out = in1;
+    out <= in1;
     end else begin
-    assign out = 1'b0;
+    out <= 1'b0;
     end
 end
 
@@ -253,9 +253,9 @@ module BYTE_SWITCH_GATE(
 );
 always @(posedge clk) begin
      if(in0>1'b0) begin 
-        assign out = in1;
+         out <= in1;
     end else begin
-        assign out = 8'b00000000;
+         out <= 8'b00000000;
     end
 end
 

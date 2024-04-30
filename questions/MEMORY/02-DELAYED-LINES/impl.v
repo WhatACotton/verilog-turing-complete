@@ -1,24 +1,23 @@
 module DELAY(
-    input wire clk,
-     input wire       in0,
-     output reg       out
+        input wire clk,
+        input wire rst,
+        input wire i_data,
+        output wire o_data
 );
-reg w_0 = 1'b0;
-reg w_1 = 1'b0;
-reg w_2 = 1'b0;
-always @(posedge clk) begin
-    if(w_0 > 1'b0)begin
-        assign w_0 = 1'b0;
-        assign w_1 = in0;
-        assign out = w_2;
-    end else begin
-        assign w_0 = 1'b1;
-        assign w_2 = in0;
-        assign out = w_1;
-    end
-end
-endmodule
 
+        reg r_data;
+
+        assign o_data = r_data;
+
+        always @(posedge clk) begin
+                if(rst) begin
+                        r_data <= 1'b0;
+                end else begin
+                        r_data <= i_data;
+                end
+        end
+
+endmodule
 module DELAY_LINES (
     input wire clk,
      input wire       in0,
@@ -26,13 +25,15 @@ module DELAY_LINES (
 );
 DELAY DELAY_0(
     .clk(clk),
-    .in0(in0),
-    .out(w_0)
+    .rst(1'b0),
+    .i_data(in0),
+    .o_data(w_0)
 );
 DELAY DELAY_1(
     .clk(clk),
-    .in0(w_0),
-    .out(out)
+    .rst(1'b0),
+    .i_data(w_0),
+    .o_data(out)
 );
 
 endmodule

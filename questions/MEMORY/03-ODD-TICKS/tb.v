@@ -7,15 +7,23 @@ module ODD_TICKS_tb;
         $dumpvars(0, DUT);
     end
     wire out;
-
-  
+    reg rst = 1'b0;
+  always #1 begin
+        in0 <= ~in0;
+    end
    
     ODD_TICKS DUT(
-        .out    (out    )
+        .clk (in0),
+        .rst(rst   ),
+        .o_data    (out    )
     );
 
     initial begin
-        in0 = 1'b0;
+        rst = 1'b0;
+        #1
+        rst = 1'b1;
+        #1
+        rst = 1'b0;
         #6
         $finish;
     end
