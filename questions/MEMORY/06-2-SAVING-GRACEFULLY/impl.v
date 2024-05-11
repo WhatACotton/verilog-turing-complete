@@ -1,5 +1,6 @@
 module MEMORY(
     input wire clk,
+    input wire rst,
      input wire       save,
      input wire         value,
      output wire       out
@@ -21,7 +22,7 @@ module MEMORY(
     );
     DELAY DELAY0(
         .clk    (clk    ),
-        .rst    (1'b0    ),
+        .rst    (rst    ),
         .i_data    (w_2    ),
         .o_data    (w_3    )
     );

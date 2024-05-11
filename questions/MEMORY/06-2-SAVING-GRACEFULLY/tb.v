@@ -4,6 +4,7 @@ module MEMORY_tb;
     reg save = 1'b0;
     reg value = 1'b0;
     reg clk = 1'b1;
+    reg rst = 1'b0;
     initial begin
         $dumpfile("wave.vcd");
         $dumpvars(0, DUT);
@@ -13,6 +14,7 @@ module MEMORY_tb;
     end
     MEMORY DUT(
         .clk (clk),
+        .rst(rst   ),
         .save    (save    ),
         .value    (value    ),
         .out    (out    )
